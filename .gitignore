@@ -1,0 +1,5 @@
+*.parquet
+
+*/*.ipynb_checkpoints
+*/*_data
+
