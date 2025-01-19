@@ -1,20 +1,28 @@
 services:
-  pgdatabase:
+  db:
+    container_name: postgres
     image: postgres:latest
     environment:
-      - POSTGRES_USER=root
-      - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=ny_taxi
-    volumes:
-      - "K:\\Data-Engineerin-zoomcamp\\Docker-Terraform\\ny_taxi_postgres_data:/var/lib/postgresql/data:rw"
+      POSTGRES_USER: 'root'
+      POSTGRES_PASSWORD: 'root'
+      POSTGRES_DB: 'ny_taxi'
     ports:
-      - "5432:5432"
-  pgadmin:
-    image: dpage/pgadmin4
+      - '5433:5432'
+    volumes:
+      - "./ny_taxi_postgres_data:/var/lib/postgresql/data:rw"
+
+  pgadminHW:
+    container_name: pgadmin
+    image: elestio/pgadmin:latest
     environment:
-      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
-      - PGADMIN_DEFAULT_PASSWORD=root
+      PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
+      PGADMIN_DEFAULT_PASSWORD: "root"
     ports:
       - "8080:80"
-    
+    volumes:
+      - ./vol-pgadmin_data:/var/lib/pgadmin  
+
+volumes:
+  vol-pgadmin_data:
+    name: vol-pgadmin_data
 

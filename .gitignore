@@ -1,4 +1,6 @@
 *.parquet
+*.gz
+*.csv
 
 */*.ipynb_checkpoints
 */*_data

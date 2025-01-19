@@ -29,18 +29,21 @@ The course uses a variety of tools and technologies, including:
 ---
 
 ## 📂 Repository Structure
-This repository is organized to track my progress through the course:
-data-engineering-zoomcamp/<br>
-├── week1/ # Week 1: Introduction & Docker<br>
-├── week2/ # Week 2: Data Ingestion & Workflow Orchestration<br>
-├── week3/ # Week 3: Data Warehouse & BigQuery<br>
-├── week4/ # Week 4: Analytics Engineering (dbt)<br>
-├── week5/ # Week 5: Batch Processing (Spark)<br>
-├── week6/ # Week 6: Streaming (Kafka)<br>
-├── week7/ # Week 7: Project<br>
-├── notes/ # Course notes and summaries<br>
-├── projects/ # Projects and assignments<br>
+This repository is organized to track my progress through the course:<br>
+```console
+data-engineering-zoomcamp/ 
+├── week1/ # Week 1: Introduction & Docker
+├── week2/ # Week 2: Data Ingestion & Workflow Orchestration
+├── week3/ # Week 3: Data Warehouse & BigQuery
+├── week4/ # Week 4: Analytics Engineering (dbt)
+├── week5/ # Week 5: Batch Processing (Spark)
+├── week6/ # Week 6: Streaming (Kafka)
+├── week7/ # Week 7: Project
+├── notes/ # Course notes and summaries
+├── projects/ # Projects and assignments
 └── README.md #
+```
+
 
 📝 Notes
 My personal notes and summaries for each week can be found in the [Notes](./Notes/) directory.
